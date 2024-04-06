@@ -1,0 +1,133 @@
+@font-face {
+    font-family: norse;
+    src: url(/font/Norse-Bold.otf);
+  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    margin: 0;
+    padding-bottom:15px;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.left-side{
+    width: 35%;
+    position: relative;
+}
+
+.left-side > img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    opacity: 0.75;
+}
+
+.odin-logo {
+    width: 23%;
+    height: 85%;
+    opacity: 1;
+}
+
+.text{
+    font-family: norse, sans-serif;
+    color: white;
+    font-size: 100px;
+}
+
+.right-side{
+    width: 65%;
+}
+
+.description-container{
+    display: flex;
+    flex: 1 1 0%;
+    height: 40%;
+    background-color: whitesmoke;
+}
+
+.description-body{
+    padding: 125px 45px 0 45px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 80%;
+    height: 50px;
+}
+
+.form-container{
+    display: flex;
+    flex: 1 1 0%;
+    height: 30%;
+    background-color: white;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 40px;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    width: 75%;
+}
+
+form > div{
+    padding-bottom: 20px;
+}
+
+input{
+    width: 220px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(188, 188, 196);
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
+    outline: 0;
+    border: 1px solid blue;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    
+}
+
+input:invalid:required {
+    border: 1px solid red;
+}
+
+/* input:invalid:required {
+    border: 1px solid red;
+} */
