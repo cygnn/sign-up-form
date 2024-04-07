@@ -41,7 +41,8 @@
                                 <input type="email" name="email" id="email" required/>
                             </div>
                             <div>
-                                <label for="tel">PHONE NUMBER*</label><br>
+                                <!-- Phone number wont show invalid even if input is string -->
+                                <label for="tel">PHONE NUMBER*</label><br> 
                                 <input type="tel" name="tel" id="tel" required/>
                             </div>
                             <div>
@@ -51,6 +52,13 @@
                             <div>
                                 <label for="confirm-pw">CONFIRM PASSWORD*</label><br>
                                 <input type="password" name="confirm-pw" id="confirm-pw" required/>
+                            </div>
+                            
+                            <div class="create-account">
+                                <button class="create-account-btn">Create Account</button>
+                                <p>
+                                    Already have an account? <a href="">Log in</a>
+                                </p>
                             </div>
                         </form>
                     </div>
