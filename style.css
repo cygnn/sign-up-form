@@ -5,6 +5,10 @@
   }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(40, 40, 40);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 h2{
     margin: 0;
@@ -13,12 +17,13 @@ h2{
 
 .main-container{
     width: 100vw;
-    height: 100vh;
+    height: 99%;
     display: flex;
     justify-content: center;
-    border: 2px solid black;
+    border: 0px solid black;
     margin: 0;
     padding: 0;
+    background-color: rgb(40, 40, 40);
 }
 
 .sub-container{
@@ -26,7 +31,7 @@ h2{
     height: 100%;
     display: flex;
     justify-content: center;
-    border: 2px solid black;
+    border: 0px solid black;
     margin: 0;
     padding: 0;
 }
@@ -114,7 +119,13 @@ form > div{
     padding-bottom: 20px;
 }
 
-input:indeterminate,input{
+label{
+    font-size: 0.9rem;
+    color:rgb(85, 84, 84);
+    font-weight: 500;
+}
+
+input{
     width: 95%;
     height: 20px;
     border-radius: 3px;
@@ -123,14 +134,14 @@ input:indeterminate,input{
     font-size: 1rem;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
+input[type]:focus{
     outline: 0;
     border: 1px solid blue;
     box-shadow: 0 0 5pt 2pt #D3D3D3;
 }
 
 
-input:focus:invalid {
+.invalid{
     border: 1px solid red;
 }
 
@@ -155,4 +166,19 @@ a{
     color: #596D48;
     text-decoration: none;
     font-weight: bold;
+}
+
+.error-div{
+    position: relative;
+}
+.error{
+    position: absolute;
+    top: 38px;
+    display: none;
+}
+
+.error.display-error{
+    display: block;
+    font-size: 0.8rem;
+    color: red;
 }
