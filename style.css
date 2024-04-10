@@ -118,7 +118,7 @@ a:visited{
     flex-direction: column;
     padding: 20px 0px 0px 40px;
     width: 100%;
-    box-shadow:  0 0 5pt 2pt #D3D3D3;
+    box-shadow:  0 2pt 5pt 0pt #D3D3D3;
     max-height: 50%;
     flex: 1 1 0%;
 }
