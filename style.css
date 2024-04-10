@@ -39,6 +39,22 @@ h2{
 .left-side{
     width: 35%;
     position: relative;
+    background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+}
+.left-side > p {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 95%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+a:visited{
+    color: white;
 }
 
 .left-side > img{
@@ -162,7 +178,7 @@ input[type]:focus{
     box-shadow: 0 0 5pt 2pt #D3D3D3;
 }
 
-a{
+.right-side a{
     color: #596D48;
     text-decoration: none;
     font-weight: bold;
